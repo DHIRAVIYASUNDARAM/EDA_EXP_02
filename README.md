@@ -44,6 +44,7 @@ print("Count by Type:\n", count_by_type, "\n")
 ```
 
 <img width="302" height="118" alt="image" src="https://github.com/user-attachments/assets/47912034-c9e0-4d89-b8f6-28674c7319ab" />
+
 ```
 pivot_country_type = df.pivot_table(
 index='country',
@@ -59,6 +60,7 @@ max_count = pivot_country_type['Total'].max() # number of titles
 print("Pivot Table (Country vs Type):\n", pivot_country_type.head(), "\n")
 print(f"Largest Overall: {max_country} with {max_count} titles\n")
 ```
+
 <img width="668" height="210" alt="image" src="https://github.com/user-attachments/assets/84ed2a5d-03dc-4ac0-8874-a03e5a8b43b2" />
 
 ```
@@ -89,13 +91,16 @@ print("\nExpanded Genre Sample:\n",
 df_expanded[['title','listed_in_y']].head())
 ```
 <img width="664" height="164" alt="image" src="https://github.com/user-attachments/assets/7e9422c6-09a3-4c7f-9624-39a1b3243edb" />
+
 ```
 top_genres = df_expanded['listed_in_y'].value_counts().head(5)
 print("\nTop 5 Genres:\n", top_genres, "\n")
 ```
+
 <img width="336" height="185" alt="image" src="https://github.com/user-attachments/assets/5d14c60c-6d58-4ecb-9aef-c09cb9c30529" />
 
 
 
 **Result**
+
 Helps Netflix in content planning & investments.
